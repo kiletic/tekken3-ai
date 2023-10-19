@@ -11,7 +11,7 @@ Communication between the emulator and python program was achieved through TCP s
 To handle network, [socket](https://docs.python.org/3/library/socket.html) library was used in python and [File API](https://pcsx-redux.consoledev.net/Lua/file-api/#network-streams) was used in Redux which in the background uses [libuv](https://pcsx-redux.consoledev.net/Lua/libraries/#luv).
 
 <p align="center" width="100%">
-    <img src="https://i.imgur.com/IGL55TZ.png">
+    <img src="https://i.imgur.com/PSb5Us5.png">
 </p>
 
 
@@ -21,13 +21,13 @@ All implementations of the algorithms can be found in [agent.py](https://github.
 To train the agent deep reinforcement learning was used, specifically implementation of the **Deep Q-Learning** algorithm as described in [[1]](https://www.nature.com/articles/nature14236), and **Double Deep Q-Learning** as described in [[2]](https://arxiv.org/abs/1509.06461). Following image shows simplified view of the components implemented.
 
 <p align="center" width="100%">
-    <img src="https://i.imgur.com/1iQJ19e.png">
+    <img src="https://i.imgur.com/q3UiqEq.png">
 </p>
 
 State is represented as **n** consecutive frames in the game, grayscaled and resized to 102x72. That is then turned into PyTorch tensor and fed as input to the agent.
 
 <p align="center" width="100%">
-    <img src="https://imageupload.io/ib/ziUtAD1RxasT94f_1697738932.png">
+    <img src="https://imageupload.io/ib/9Ks8SzZsba1nPND_1697740751.png">
 </p>
 
 ## Example
@@ -57,7 +57,7 @@ for _ in range(100):
 After training for 1.15M steps which correspond to 32 hours or 17250 matches played, agent achieved \~90% winrate against CPU AI on easy difficulty and \~33% winrate on same opponent but hard difficulty. Looking at the graphs and comparing it to RandomAgent which achieves \~79%/\~25% it is clear that the agent is successfuly learning. 
 
 <p align="center" width="100%">
-    <img width="60%" src="https://i.imgur.com/WkKH8Kg.png">
+    <img width="60%" src="https://i.imgur.com/Wfqs36N.png">
 </p>
 
 
