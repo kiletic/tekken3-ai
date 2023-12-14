@@ -62,8 +62,7 @@ class DQNModel(nn.Module):
     self.conv1 = nn.Conv2d(in_channels, 32, kernel_size=8, stride=4)
     self.conv2 = nn.Conv2d(32, 64, kernel_size=4, stride=2)
     self.conv3 = nn.Conv2d(64, 64, kernel_size=3, stride=1)
-    # 7 * 10 hardcoded for 112x84 (or 84x112) image input
-    # self.fc1 = nn.Linear(7 * 10 * 64, 512)
+    # 6 * 9 hardcoded for 102x76 image input
     self.fc1 = nn.Linear(6 * 9 * 64, 512)
     self.fc2 = nn.Linear(512, num_of_actions)
     self.optimizer = torch.optim.Adam(self.parameters(), lr = learning_rate) 

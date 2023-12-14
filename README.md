@@ -27,7 +27,7 @@ To train the agent deep reinforcement learning was used, specifically implementa
 The state is represented as **n** consecutive frames in the game, grayscaled and resized to 102x72. These are then converted into PyTorch tensors and fed as input to the agent.
 
 <p align="center" width="100%">
-    <img src="https://imageupload.io/ib/9Ks8SzZsba1nPND_1697740751.png">
+    <img src="https://iili.io/JuRhzVn.md.png">
 </p>
 
 ## Example
