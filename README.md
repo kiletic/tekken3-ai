@@ -27,7 +27,7 @@ To train the agent deep reinforcement learning was used, specifically implementa
 The state is represented as **n** consecutive frames in the game, grayscaled and resized to 102x72. These are then converted into PyTorch tensors and fed as input to the agent.
 
 <p align="center" width="100%">
-    <img src="https://iili.io/JuRhzVn.md.png">
+    <img src="https://github.com/kiletic/tekken3-ai/assets/55144452/e2104876-e4e8-4742-9564-97cf41818b7a">
 </p>
 
 ## Example
